@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 ion-menu-button {
   color: var(--ion-color-primary);
 }
@@ -25,4 +29,39 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+.calculator-numbers {
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+.calculator-display {
+  height: 30vh;
+  background-color: rgb(39, 39, 39);
+  color: rgb(226, 226, 226);
+  font-size: 36px;
+  padding: 0px;
+
+  .calculator-display-content {
+    height: 100%;
+    padding: 10px 20px;
+  }
+}
+
+.calculator-buttons {
+  background-color: rgb(75, 75, 75);
+  height: 70vh;
+  padding: 0px;
+
+  .calculator-div-button {
+    padding: 2px;
+
+  }
+
+  .button {
+    width: 100%;
+    height: calc(((70vh - 10px) / 6) - 4px);
+    margin: 0px;
+    font-size: 22px;
+  }
 }
